@@ -1,0 +1,16 @@
+@import '../../assets/css/Main.scss';
+
+.button{
+    background-color:$red;
+    &:hover{
+        background-color:$accent;
+    }
+}
+
+.button-s{
+    border-color:$red;
+    color: $text-white;
+    &:hover{
+        border-color:$accent;
+    }
+}

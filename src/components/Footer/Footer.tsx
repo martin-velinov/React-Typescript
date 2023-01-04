@@ -1,9 +1,14 @@
-import React from 'react'
+import * as React from 'react';
+import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
 
-const Footer = () => {
+
+export default function Footer() {
   return (
-    <div>Footer</div>
-  )
-}
 
-export default Footer
+      <Container >
+        <Typography >@Copyright Maximus Fitness Center 2023.</Typography>
+      </Container>
+
+  );
+}

@@ -1,0 +1,11 @@
+@import '../../assets/css/Main.scss';
+
+.navigation{
+    background-color:$black;
+    padding-left: 80px;
+}
+.icon{
+    &:hover{
+        background-color: white;
+    }
+}
