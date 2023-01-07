@@ -9,8 +9,23 @@
 
 .button-s{
     border-color:$red;
-    color: $text-white;
     &:hover{
-        border-color:$accent;
+        border-color:$accent ;
+    }
+}
+
+
+
+@media screen and (min-width: 780px) {
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+}
+}
+
+@media screen and (min-width: 1180px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
     }
 }

@@ -61,20 +61,18 @@ export default function Pricing() {
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <CssBaseline />
       
-      <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
+      <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 0, pb: 6 }}>
         <Typography
           component="h1"
-          variant="h2"
+          variant="h4"
           align="center"
           color="text.primary"
           gutterBottom
         >
-          Pricing
+          Pricing Plans
         </Typography>
-        <Typography variant="h5" align="center" color="text.secondary" component="p">
-          Quickly build an effective pricing table for your potential customers with
-          this layout. It&apos;s built with default MUI components with little
-          customization.
+        <Typography variant="h6" align="center" color="text.secondary" component="p">
+          Check out our pricing plans and choose what fits your needs.
         </Typography>
       </Container>
 
@@ -114,7 +112,7 @@ export default function Pricing() {
                       mb: 2,
                     }}
                   >
-                    <Typography component="h2" variant="h3" color="text.primary">
+                    <Typography component="h2" variant="h5" color="text.primary">
                       ${tier.price}
                     </Typography>
                     <Typography variant="h6" color="text.secondary">

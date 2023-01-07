@@ -10,7 +10,6 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import hero from '../../assets/img/hero.jpg'
 import powerlifting from '../../assets/img/powerlifting.jpg'
 import yoga from '../../assets/img/yoga.jpg'
 import crossfit from '../../assets/img/crossfit.jpg'
@@ -27,26 +26,20 @@ export default function Album() {
 
       <main>
         {/* Hero unit */}
-        <Box sx={{pt: 8,pb: 6,}}>
+        <Box sx={{pt: 18,pb: 6,textAlign:'center'}}>
           <Container maxWidth="sm">
             <Typography
               component="h1"
               variant="h3"
-              color="white"
               gutterBottom
             >
               Maximus fitness center
             </Typography>
-            <Typography variant="h6"  color="white" paragraph>
+            <Typography variant="h6"  paragraph>
               Join one of our gyms and sign up for one of the plans with our trainers
                and improve your health, performance and looks.
             </Typography>
-            <Box
-              component="img"
-              sx={{ height: 180,width:300 }}
-              alt="hero"
-              src={hero}
-            />
+
             <Stack
               sx={{ pt: 4 }}
               direction="row"
@@ -59,10 +52,10 @@ export default function Album() {
           </Container>
           
         </Box>
-        <Container sx={{ py: 8 ,display:'flex',flexDirection:'column'}} maxWidth="lg">
+        <Container className="wrapper" sx={{display: 'grid', gridTemplateColumns:'auto', py: 8 }} >
           {/* End hero unit */}
 
-                <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column',margin:'20px' }}>
+                <Card sx={{ display: 'flex', flexDirection: 'column', margin:'20px' }}>
                   <CardMedia
                     component="img"
                     sx={{
@@ -82,10 +75,10 @@ export default function Album() {
                   </CardContent>
                   <CardActions>
                     <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
+                    <Button size="small">Sign up</Button>
                   </CardActions>
                 </Card>
-                <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column',margin:'20px' }}>
+                <Card sx={{ display: 'flex', flexDirection: 'column',margin:'20px' }}>
                   <CardMedia
                     component="img"
                     sx={{
@@ -105,10 +98,10 @@ export default function Album() {
                   </CardContent>
                   <CardActions>
                     <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
+                    <Button size="small">Sign up</Button>
                   </CardActions>
                 </Card>
-                <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column',margin:'20px' }}>
+                <Card sx={{  display: 'flex', flexDirection: 'column',margin:'20px' }}>
                   <CardMedia
                     component="img"
                     sx={{
@@ -128,10 +121,10 @@ export default function Album() {
                   </CardContent>
                   <CardActions>
                     <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
+                    <Button size="small">Sign up</Button>
                   </CardActions>
                 </Card>
-                <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column',margin:'20px' }}>
+                <Card sx={{  display: 'flex', flexDirection: 'column',margin:'20px' }}>
                   <CardMedia
                     component="img"
                     sx={{
@@ -151,7 +144,7 @@ export default function Album() {
                   </CardContent>
                   <CardActions>
                     <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
+                    <Button size="small">Sign up</Button>
                   </CardActions>
                 </Card>
         </Container>

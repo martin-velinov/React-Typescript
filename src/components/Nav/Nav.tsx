@@ -33,10 +33,10 @@ export default function DrawerAppBar(props: Props) {
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       
       <Divider />
-      <List sx={{ display:'flex', flexDirection:'column',textAlign: 'center' ,marginTop:'50px', textTransform:'uppercase'}}>
+      <List sx={{display:'flex', flexDirection:'column',textAlign: 'center' ,marginTop:'50px', textTransform:'uppercase'}}>
           <ListItem>
             <ListItemButton >
-            <Link href="/">Home</Link>
+            <Link  href="/">Home</Link>
             </ListItemButton>
           </ListItem>
           <ListItem>
@@ -66,7 +66,7 @@ export default function DrawerAppBar(props: Props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex', justifyContent:'center' }}>
       <CssBaseline />
       <AppBar component="nav" className='navigation'>
         <Toolbar>
@@ -89,21 +89,21 @@ export default function DrawerAppBar(props: Props) {
           </Link>
           
 
-          <Box sx={{ display: { xs: 'none', sm: 'block',color: '#fff' } }}>
+          <Box sx={{ display: { xs: 'none', sm: 'block',color: '#fff'} }}>
               <Button>
-                <Link href="/">Home</Link>
+                <Link sx={{ color:'white'}} href="/">Home</Link>
               </Button>
               <Button>
-                <Link href="/about">About</Link>
+                <Link sx={{ color:'white'}} href="/about">About</Link>
               </Button>
               <Button>
-                <Link href="/programs">Programs</Link>
+                <Link sx={{ color:'white'}} href="/programs">Programs</Link>
               </Button>
               <Button>
-                <Link href="/contact">Contact</Link>
+                <Link sx={{ color:'white'}} href="/contact">Contact</Link>
               </Button>
               <Button>
-                <Link href="/signup">Sign up</Link>
+                <Link sx={{ color:'white'}} href="/signup">Sign up</Link>
               </Button>
           </Box>
         </Toolbar>
