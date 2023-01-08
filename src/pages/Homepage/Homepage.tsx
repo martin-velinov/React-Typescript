@@ -9,6 +9,7 @@ const Homepage = () => {
       <Hero/>
       <Pricing/>
     <Accordion/>
+    <Testimonials/>
     </div>
   )
 }
