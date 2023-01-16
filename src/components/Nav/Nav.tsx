@@ -14,6 +14,9 @@ import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import logo from '../../assets/img/logo.png';
 import './Nav.css'
+import { Typography } from '@mui/material';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 interface Props {
 
   window?: () => Window;
@@ -33,7 +36,7 @@ export default function DrawerAppBar(props: Props) {
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       
       <Divider />
-      <List sx={{display:'flex', flexDirection:'column',textAlign: 'center' ,marginTop:'50px', textTransform:'uppercase'}}>
+      <ListItem sx={{display:'flex', flexDirection:'column',textAlign: 'center' ,marginTop:'50px', textTransform:'uppercase'}}>
           <ListItem>
             <ListItemButton >
             <Link  href="/">Home</Link>
@@ -59,7 +62,7 @@ export default function DrawerAppBar(props: Props) {
           <Link href="/signup">Sign up</Link>
             </ListItemButton>
           </ListItem>
-      </List>
+      </ListItem>
     </Box>
   );
 
@@ -105,8 +108,17 @@ export default function DrawerAppBar(props: Props) {
               <Button>
                 <Link sx={{ color:'white'}} href="/signup">Sign up</Link>
               </Button>
-          </Box>
+            </Box>
+            <Box>
+            <LocalPhoneIcon sx={{ marginLeft:'40px'}}/>
+            <Typography sx={{ marginLeft:'70px',marginTop:'-30px'}}>+331 02 458 998</Typography>
+            </Box>
+            <Box>
+              <LocationOnIcon sx={{ marginLeft:'40px'}}/>
+              <Typography sx={{ marginLeft:'70px',marginTop:'-30px'}}>8661 Colesville Rd, Dallas</Typography>
+            </Box>
         </Toolbar>
+        
       </AppBar>
       <Box component="nav">
         <Drawer

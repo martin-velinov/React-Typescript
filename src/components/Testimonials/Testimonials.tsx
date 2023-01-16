@@ -7,6 +7,7 @@ import person1 from '../../assets/img/person_1.png'
 import person2 from '../../assets/img/person_2.png'
 import person3 from '../../assets/img/person_3.png'
 import person4 from '../../assets/img/person_4.png'
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 export default function Testimonials()  {
   return (
@@ -14,7 +15,9 @@ export default function Testimonials()  {
 
 <Container sx={{ marginTop:'50px', textAlign:'center' }}>
    <Typography variant='h4'sx={{ paddingBottom:'50px' }}>What people say about us</Typography>
+   
    <Container className='team-wrap'>
+
    <div className="team-1">
 
    <Box
@@ -28,7 +31,8 @@ export default function Testimonials()  {
    <Typography variant='h6'>Bruno Marcel</Typography>
    <Typography>CEO, Vercel</Typography>
  </div>
- <Typography sx={{ fontStyle:'italic'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptatem facilis pariatur nihil, amet soluta praesentium odit.</Typography>
+ <FormatQuoteIcon sx={{color:'#1976d2'}}/>
+ <Typography sx={{ fontStyle:'italic'}}>Sapiente voluptatem facilis pariatur nihil, amet soluta praesentium odit.</Typography>
 </div>
 
 
@@ -44,7 +48,8 @@ export default function Testimonials()  {
    <Typography variant='h6'>Emmilia Rose</Typography>
    <Typography>Investment Banker</Typography>
  </div>
- <Typography sx={{ fontStyle:'italic'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab voluptatibus dolores velit repudiandae sed placeat porro?</Typography>
+ <FormatQuoteIcon sx={{color:'#1976d2'}}/>
+ <Typography sx={{ fontStyle:'italic'}}>Sapiente voluptatem facilis pariatur nihil, amet soluta praesentium odit.</Typography>
 </div>
 
 
@@ -60,7 +65,8 @@ export default function Testimonials()  {
    <Typography variant='h6'>Simon William</Typography>
    <Typography>Senior Programmer, Endava</Typography>
  </div>
- <Typography sx={{ fontStyle:'italic'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem id ipsum at hic dolores numquam!</Typography>
+ <FormatQuoteIcon sx={{color:'#1976d2'}}/>
+ <Typography sx={{ fontStyle:'italic'}}>Sapiente voluptatem facilis pariatur nihil, amet soluta praesentium odit.</Typography>
 </div>
 
 
@@ -76,7 +82,8 @@ export default function Testimonials()  {
    <Typography variant='h6'> Jenna Colle</Typography>
    <Typography>Marketing Director, Spotify</Typography>
  </div>
- <Typography sx={{ fontStyle:'italic'}}> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, est.</Typography>
+ <FormatQuoteIcon sx={{color:'#1976d2'}}/>
+ <Typography sx={{ fontStyle:'italic'}}> Sapiente voluptatem facilis pariatur nihil, amet soluta praesentium odit.</Typography>
 </div>
    </Container>
  </Container>
